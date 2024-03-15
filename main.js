@@ -31,6 +31,7 @@ app.use((req,res,next)=>{
     delete req.session.message;
     next();
 })
+app.use(express.static('uploads'));
 
 //set template engine
 app.set('view engine','ejs');
